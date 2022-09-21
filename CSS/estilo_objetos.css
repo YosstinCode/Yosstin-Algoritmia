@@ -187,6 +187,20 @@ textarea{
 }
 
 
+#formulario > .container{
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: .5rem;
+}
+
+#formulario > .container > input{
+	width: 87px;
+	border-radius: 5px;
+	text-align: center;
+}
+
 
 footer{
 	background: #333;
