@@ -1,0 +1,241 @@
+
+
+body{
+	font-family: georgia, times, serif;
+	color:#222;
+	font-size: 1.2rem;
+	line-height: 1.3em;
+	margin: 0;
+	background: #f4f4f4;
+}
+
+h1{
+	font-size: 10em;
+	line-height: 3em;
+}
+
+p{
+	margin-bottom: 1.5em;
+
+}
+
+.container{
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.header{
+	background: RGB(255, 100, 100);
+	color: white;
+	padding: 2rem 0; /*relleno en el encabezado o margen interna arriba y abajo*/
+    position: fixed;/* para dejar fijo la cabecera pero solito n es suficiente, requiere indicar los sigueintes parametros de top,left y width */
+	left:0;/*  posicion 0 a la izquierda*/
+	top:0;/* posicion hacia arriba */
+	right: 0; /* aunque podemos dar valorde width 100% para que utilice todo el anchoy es lo mismo */
+}
+
+.header a{
+	color: white;
+	text-decoration: none; /* para que no tenga viñeta */
+}
+
+.logo-nav-container{
+	display: flex;   /*flexbox para dejar separados el nav y el logo sin dejarlo flotante */
+	justify-content: space-between; /*Justificar el contenido para que el logo y el nav queden a los lados */
+	align-items: center; /*centrar los contenidos tanto del logo como del nav */
+	flex-wrap: wrap;/*se utiliza cuando tenemos los casos responsive donde se reduce a tamaños de dispositivos para no forzar que los elementos esten alineados sino que bajen*/
+}
+
+.logo{
+	/*letter-spacing: 5px;espacion entre letras de la plabara logo
+	font-size: 1.4em;*/
+	width: 250px;
+}
+.menu-icon{
+	display: none;
+}
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none; /*. para quitarle el subrayado del hipervinculo  */
+}
+
+.navigation ul li{
+	display:inline-block;/*.para mostrar los elementos del menu en forma horizontal y no vertical como suele venir  */
+    list-style: none;
+}
+
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 1rem; /*crelleno arriba y abajo de 0.5 y a los costados de 1 rem*/
+	transition: all 0.4s linear;/* efecto de unos fracciones de segundos */
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+	background: #8a8a8a;
+}
+
+
+
+.main {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 10px auto;
+	padding-top: 12rem;/* se utiliza para darle ese falseo o acomodo hacia abajo del contenido que queda detras del encabezado*/
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+figure{
+	padding: 0;
+	margin: 0;
+}
+
+figcaption{
+	font-size: 0.8rem;
+}
+img {
+	max-width: 100%;
+	height: auto;
+
+}
+
+
+
+*{box-sizing:border-box;}
+
+form{
+	width:500px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:80px;
+	font-size: 1rem;
+	line-height: 1em;
+	display:inline-block;
+	
+	
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="date"],
+form input[type="month"],
+form input[type="week"],
+form input[type="color"],
+form input[type="time"],
+form input[type="url"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 2px;
+	margin-top:2px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+footer{
+	background: #333;
+	padding: 4rem 0;
+	text-align: center;
+	margin-top: 2rem;
+	color:white;
+}
+
+
+
+@media only screen and (max-width:767px){
+
+.menu-icon{
+	display: block;
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
+.navigation{
+	width: 100%;
+}
+
+.navigation ul{
+	display: none;
+}
+.navigation ul.show{
+	display: block;
+}
+
+
+
+.navigation ul li{
+	display:block;/*.Aqui toca en bloque por el tamaño del dispositivo  */
+    margin-top: 1rem;
+}
+
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem ; /*crelleno arriba y abajo de 0.5 */
+	transition: all 0.4s linear;/* efecto de unos fracciones de segundos */
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+	background: #blue;
+}
+
+	
+}
+
+
