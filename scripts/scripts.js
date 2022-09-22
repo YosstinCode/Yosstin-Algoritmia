@@ -148,14 +148,15 @@ jQuery('document').ready(function($){
 
         alert("Los metros son: "+ medidas+ "En pulgadas son: "+ b)
        })
+
        $('#botonEjercicio10').click(function(){
 
         let Altura= +prompt("Ingrese la altura de la alberca: ")
         let Largo= +prompt("Ingrese el largo de la alberca: ")
         let Ancho= +prompt("Ingrese el ancho de la alberca: ")
         let v= Altura*Largo*Ancho
-        alert("El volumen en metros cubicos es: "+ v)
         let metroCubico= prompt("Ingrese el costo de metroCubico")
+        alert("El volumen en metros cubicos es: "+ v)
         alert("El costo del metroCubico es: "+ metroCubico * v)
 
 
