@@ -27,7 +27,8 @@ p{
 }
 
 .header{
-	background: RGB(255, 100, 100);
+	/* background: RGB(255, 100, 100); */
+	background: rgb(43, 174, 255);
 	color: white;
 	padding: 2rem 0; /*relleno en el encabezado o margen interna arriba y abajo*/
     position: fixed;/* para dejar fijo la cabecera pero solito n es suficiente, requiere indicar los sigueintes parametros de top,left y width */
